@@ -1,0 +1,24 @@
+.meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 444px;
+}
+.imagemJs {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 20px
+}
+.reloginho{
+    display: flex;
+    align-items: center;
+    flex-flow: column; 
+}
+.desrepeitandoCanvas {
+    display: flex;
+}
+.imagemJs > img {
+    height: 83px;
+    margin: 5px;
+}
