@@ -22,3 +22,12 @@
     height: 83px;
     margin: 5px;
 }
+body > div > h1{
+    margin-bottom: 20px;
+}
+.game{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 20px
+}
