@@ -9,13 +9,14 @@ function drawClock() {
   drawFace(ctx, radius);
   drawNumbers(ctx, radius);
   drawTime(ctx, radius);
+
 }
 
 function drawFace(ctx, radius) {
   var grad;
   ctx.beginPath();
   ctx.arc(0, 0, radius, 0, 2*Math.PI);
-  ctx.fillStyle = 'white';
+  ctx.fillStyle = 'black';
   ctx.fill();
   grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
   grad.addColorStop(0, '#333');
@@ -26,7 +27,7 @@ function drawFace(ctx, radius) {
   ctx.stroke();
   ctx.beginPath();
   ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-  ctx.fillStyle = '#333';
+  ctx.fillStyle = '#864b0e';
   ctx.fill();
 }
 
@@ -77,3 +78,9 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
+window.onload = function() {
+  var canvas = document.getElementById("relogio");
+  var ctx = canvas.getContext("2d");
+  var img = document.getElementById("rolex");
+  ctx.drawImage(img, -170, -165,340,330);
+};

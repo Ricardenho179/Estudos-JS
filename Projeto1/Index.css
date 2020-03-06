@@ -31,3 +31,7 @@ body > div > h1{
     flex-flow: column;
     margin: 20px
 }
+img#rolex{
+    width: 50%!important;
+    height: 50%;
+}
