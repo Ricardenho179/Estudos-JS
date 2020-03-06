@@ -7,40 +7,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Projeto1 Nv1</title>
 </head>
-<body>
+<body onload="startGame()"> 
 
     
     <div class="meio">
+        <h1>SVG e canvas não se misturam mesmo q sejam colocados dentro um do outro.</h1>
         <canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000;"></canvas>
             <svg width="100" height="100">
                 <circle cx="50" cy="50" r="45" stroke="red" stroke-width="9" fill="black" />
             </svg>
         </canvas>
     </div>
+
+
     <div class="imagemJs">
         <p>Imagem com canvas</p>
         <img id="scream" src="imagens/guepardo.jpg" alt="guepardo">
         <canvas id="canvas2" width="400" height="220" style="border:1px solid #000000;">
         </canvas>
     </div>   
+
+
     <div class="imagemJs">
         <p>Não da pra por texto direto dentro do canvas :(</p>
         <canvas id="canvas3" width="400" height="400" style="border:1px solid #000000;">
         </canvas>
     </div> 
+
+
     <div class="reloginho">
         <h1>Bora fazer um relóginho KKKKKKjota</h1>
         <canvas id="relogio" width="400" height="400" style="background-color:gold"></canvas>
     </div>
-    <div class="game">
-        <h1>Hora de fazer o game :D</h1>
-        <canvas id="gamezinho" width="950" height="800" style="border:1px solid #000"></canvas>
-    </div>
-
-
-
-
-
 
     <div class="naoImporta">
         <img id="rolex" src="imagens/rolex.jpg" alt="#">
@@ -49,7 +47,7 @@
 </body>
 <script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="relogio.js"></script>
-<script type="text/javascript" src="pedrinho.js"></script>
+<script type="text/javascript" src="imagem.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

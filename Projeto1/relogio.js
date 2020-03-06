@@ -78,9 +78,3 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
-window.onload = function() {
-  var canvas = document.getElementById("relogio");
-  var ctx = canvas.getContext("2d");
-  var img = document.getElementById("rolex");
-  ctx.drawImage(img, -170, -165,340,330);
-};
